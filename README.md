@@ -1,43 +1,24 @@
-## Gerando e Exibindo dados com Python em Formato JSON
+# Gerando e Exibindo dados com Python em Formato JSON
+
 
 ### Gerando nosso json
 
+Usamos o arquivo jsonGenarator.py para poder gerar o nosso arquivo json, esse arquivo tem uma função generator que passamos como parametro o nosso json que sera gerado nosso json na raiz da
+pasta do projeto.
 
+``` python
 
-Esse nosso arquivo jsonGenerator.py tem como objetivo gerar o nosso documento json.
+import json
 
-Rodando nossa função no terminal.
+def generator(dados):
+	with open('arquivo.json', 'w', encoding='utf8') as f:
+		json.dump(dados, f, ensure_ascii=False, sort_keys=True, indent=4, separators=(',',':'))
 
+myJson = {
+	'user': 'admin',
+	'password': '12345'
+}
 
-
-``` bash
-	
-	python jsonGenerator.py
+generator(myJson)
 
 ```
-
-
-
-Nosso script do arquivo jsonGenerator.py.
-
-
-
-``` Python
-
-	import json # Biblioteca para manipular nosso json
-
-	# Função para gerar o nosso json
-	def generator(dados):
-		with open('arquivo.json', 'w', encoding='utf8') as f:
-			json.dump(dados, f, ensure_ascii=False, sort_keys=True, indent=4, separators=(',',':'))
-	
-	# Nosso json que ira como parametro
-	myJson = {
-		'user': 'admin',
-		'password': '12345'
-	}
-	
-	# Executando a funcão
-	generator(myJson)
-
-``` 
