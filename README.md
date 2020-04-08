@@ -1,16 +1,17 @@
-### Gerando e Exibindo dados com Python em Formato JSON
+## Gerando e Exibindo dados com Python em Formato JSON
 
-#### Gerando nosso json
+### Gerando nosso json
 
-- Esse nosso arquivo jsonGenerator.py tem como objetivo gerar o nosso documento json.
-- Rodando nossa função no terminal.
+Esse nosso arquivo jsonGenerator.py tem como objetivo gerar o nosso documento json.
+Rodando nossa função no terminal.
+
 ``` bash
 	
 	python jsonGenerator.py
 
 ```
 
-- Nosso script do arquivo jsonGenerator.py.
+Nosso script do arquivo jsonGenerator.py.
 
 ``` Python
 
