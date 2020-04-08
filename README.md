@@ -2,9 +2,13 @@
 
 ### Gerando nosso json
 
+
+
 Esse nosso arquivo jsonGenerator.py tem como objetivo gerar o nosso documento json.
 
 Rodando nossa função no terminal.
+
+
 
 ``` bash
 	
@@ -12,7 +16,11 @@ Rodando nossa função no terminal.
 
 ```
 
+
+
 Nosso script do arquivo jsonGenerator.py.
+
+
 
 ``` Python
 
